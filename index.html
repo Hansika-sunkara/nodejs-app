@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Makeover Studio | Colorful UI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="brand-icon">🎨</span>
+            <span class="brand-text">Makeover Studio</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1 class="gradient-text">Transform Your Website</h1>
+                <p class="hero-subtitle">Give your website a stunning makeover with our colorful UI designs</p>
+                <button class="cta-button" onclick="startMakeover()">Start Makeover ✨</button>
+            </div>
+            <div class="hero-animation">
+                <div class="floating-shape shape1"></div>
+                <div class="floating-shape shape2"></div>
+                <div class="floating-shape shape3"></div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <h2 class="section-title">Our Makeover Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Color Psychology</h3>
+                    <p>Custom color schemes that resonate with your brand identity</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✨</div>
+                    <h3>Modern Animations</h3>
+                    <p>Smooth transitions and engaging micro-interactions</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Responsive Design</h3>
+                    <p>Perfect viewing experience on all devices</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>Performance Boost</h3>
+                    <p>Lightning fast loading and optimized code</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="makeover-demo">
+            <h2 class="section-title">Try Our Makeover Tool</h2>
+            <div class="makeover-container">
+                <div class="makeover-controls">
+                    <select id="styleSelect" class="control-select">
+                        <option value="modern">Modern</option>
+                        <option value="minimalist">Minimalist</option>
+                        <option value="bold">Bold & Vibrant</option>
+                        <option value="elegant">Elegant</option>
+                    </select>
+                    
+                    <select id="colorSelect" class="control-select">
+                        <option value="vibrant">Vibrant Rainbow</option>
+                        <option value="pastel">Pastel Dreams</option>
+                        <option value="neon">Neon Lights</option>
+                        <option value="sunset">Sunset Gradient</option>
+                    </select>
+                    
+                    <select id="effectSelect" class="control-select">
+                        <option value="smooth">Smooth</option>
+                        <option value="bounce">Bounce Effect</option>
+                        <option value="glow">Glow Effect</option>
+                        <option value="pulse">Pulse Animation</option>
+                    </select>
+                    
+                    <button class="apply-button" onclick="applyMakeover()">Apply Makeover</button>
+                </div>
+                
+                <div id="result" class="makeover-result">
+                    <div class="result-content">
+                        <p>✨ Your makeover result will appear here ✨</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <h2 class="section-title">Before & After</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="before">Before</div>
+                    <div class="after">After Makeover</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>🎨 Makeover Website Studio | Transform your digital presence</p>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
